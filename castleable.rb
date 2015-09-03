@@ -13,8 +13,9 @@ ROOK_CASTLING_MOVES = {
     elsif start[1] - end_pos[1] == 2
       output << :left
     else
-      false
+      return false
     end
+    
     output << self[end_pos].color
   end
 
